@@ -1,0 +1,36 @@
+:root {
+  --black: #020402;
+  --grey:#393c41;
+  --navy: #0f1d43;
+  --blue: #22459d;
+  --green: #58bc82;
+  --mint: #a7dac1;
+  --offwhite: #f6f8ff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  color: var(--grey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes animateDown {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(5px);
+  }
+
+  60% {
+    transform: translateY(3px);
+  }
+}

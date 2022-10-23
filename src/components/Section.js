@@ -27,7 +27,7 @@ const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, hsla(227, 100%, 98%, .65) 45%, hsla(226, 32%, 92%, .0) 100%),
-    url(https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80) no-repeat center center fixed;
+    url(https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,6 +42,10 @@ const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;
     pointer-events: none;
+
+    & > h1, p {
+        color: var(--black);
+    }
 `
 
 const ButtonGroup = styled.div`
@@ -80,7 +84,8 @@ const RightButton = styled(LeftButton)`
 const DownArrow = styled.img`
     height: 2.5rem;  
     animation: animateDown infinite 1.5s;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    filter: invert(100%);
 `
 
 const Buttons = styled.div``

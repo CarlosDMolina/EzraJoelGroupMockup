@@ -5,22 +5,22 @@ import MenuIcon from '@mui/icons-material/Menu';
 function Header() {
   return (
     <Container>
-        <a href='#'>
+        <a href='/'>
             <Logo src="/images/Ezra_Joel_Group_Logo_Dark.png" alt="" />
         </a>
 
         <Menu>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Ezra Joel Foundation</a>
-            <a href="#">Media</a>
-            <a href="#">Contact</a>
+            <a href="/">About Us</a>
+            <a href="/">Services</a>
+            <a href="/">Ezra Joel Foundation</a>
+            <a href="/">Media</a>
+            <a href="/">Contact</a>
         </Menu>
 
         <RightMenu>
             <RightLinks>
-            <a href='#'>Shop</a>
-            <a href='#'>Account</a>
+            <a href='/'>Shop</a>
+            <a href='/'>Account</a>
             </RightLinks>
             <CustomMenu />
         </RightMenu>

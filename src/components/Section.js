@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Slide } from "react-awesome-reveal";
 
 function Section({ title, description, backgroundImage, leftBtnTxt, rightBtnTxt, color, showArrow}) {
   return (
     <Wrap bgImage={backgroundImage}>
+        <Slide direction="up" fraction='1' triggerOnce={true}>
         <ItemText color={color}>
             <h1>{title}</h1>
             <p>{description}</p>
         </ItemText>
+        </Slide>
         <Buttons>
+            <Slide direction="up" fraction='1' triggerOnce={true}>
             <ButtonGroup>
                 <LeftButton color={color}>
                     {leftBtnTxt}
@@ -19,13 +23,16 @@ function Section({ title, description, backgroundImage, leftBtnTxt, rightBtnTxt,
                     </RightButton>
                 } 
             </ButtonGroup>
+            </Slide>
             <DownArrow src='/images/down-arrow.svg' show={showArrow}/>
         </Buttons>
+        
     </Wrap>
   )
 }
 
 const Wrap = styled.div`
+    scroll-snap-align: start end;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, hsla(227, 100%, 98%, 1) 0%, hsla(226, 32%, 92%, .0) 100%),

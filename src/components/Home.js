@@ -5,7 +5,7 @@ import Section from './Section';
 function Home() {
   return (
     <Container>
-        <Section title='We build innovative modern design & works' description='The Primrose' backgroundImage='https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' leftBtnTxt='Shop' rightBtnTxt='learn more' color='grey' showArrow={true}/>
+        <Section title='We build innovative modern design & works' description='View our selection' backgroundImage='https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' leftBtnTxt='Shop' rightBtnTxt='learn more' color='grey' showArrow={true}/>
         <Section title='We prepare for tomorrow, by developing today'
         description='Ezra Joel Group Is an Integrated and diversified business organization. Ezra Joel operates in General Construction & Management Services, Agriculture and in the Renewable Energy Service Industry
         ' backgroundImage='https://images.unsplash.com/photo-1516216628859-9bccecab13ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80' leftBtnTxt='About us' color='blue'/>
@@ -20,8 +20,9 @@ function Home() {
 }
 
 const Container = styled.div`
+    scroll-snap-type: y mandatory;
     height: 100vh;
-
+    overflow-y: scroll;
 `
 
 export default Home

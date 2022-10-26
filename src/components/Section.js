@@ -45,6 +45,15 @@ const Wrap = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 950px) and (min-width: 568px) {
+        background: linear-gradient(180deg, hsla(227, 100%, 98%, 0.85) 45%, hsla(226, 32%, 92%, .0) 100%),
+    ${props => `url(${props.bgImage}) no-repeat center center`}; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
 `
 
 const ItemText = styled.div`
@@ -66,13 +75,31 @@ const ItemText = styled.div`
         margin-bottom: 1rem;
         color: ${props => props.color === '' ? 'var(--grey)' : 'var(--' + props.color + ')'};
     }
+
+    @media (max-width: 950px) and (min-width: 568px) {
+        padding-top: 20vh;
+        width: 85vw;
+
+        & > h1 {
+            max-width: 700px;
+            font-size: 3.5vw;
+        }
+
+        & > p {
+            font-size: 14px;
+        }
+    }
 `
 
 const ButtonGroup = styled.div`
     display: flex;
     margin-bottom: 1.875rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 950px) and (min-width: 569px) {
+       margin-bottom: 1rem;
+    }
+
+    @media (max-width: 568px) {
         flex-direction: column;
     }
 `
@@ -111,6 +138,10 @@ const DownArrow = styled.img`
     overflow-x: hidden;
     filter: invert(75%);
     visibility: ${props => props.show ? 'visible' : 'hidden'};
+
+    @media (max-width: 950px) and (min-width: 568px) {
+        display: ${props => props.show ? null : 'none'};
+    }
 `
 
 const Buttons = styled.div``
